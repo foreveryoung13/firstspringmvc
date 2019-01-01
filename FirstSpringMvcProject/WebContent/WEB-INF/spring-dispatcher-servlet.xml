@@ -13,6 +13,9 @@
 
 	<context:annotation-config />
 	<mvc:annotation-driven/>
+	<mvc:interceptors>
+		<bean class="com.nanafebriana.interceptor.DayOfWeekBasedAccesInterceptorAdapter"/>
+	</mvc:interceptors>
 	<context:component-scan base-package="com.nanafebriana" />
 	<context:component-scan base-package="com.nanafebriana.hellocontroller" />
 
