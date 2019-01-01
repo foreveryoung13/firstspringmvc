@@ -5,11 +5,13 @@ import java.util.Date;
 
 import javax.validation.constraints.Size;
 
+import com.nanafebriana.customvalidator.IsValidHobby;
+
 public class Student {
 	
 	private String name;
 	
-	@Size(min = 2, max = 30)
+	@Size(min = 2, max = 30) @IsValidHobby
 	private String address;
 	private Long studentMobile;
 	private Date studentDOB;
